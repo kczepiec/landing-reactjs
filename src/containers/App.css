@@ -1,0 +1,193 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto
+}
+
+.whatsinside {
+  padding: 80px 0
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.h1 > span {
+  position: relative;
+  z-index: 10;
+}
+
+.h1 > span::after {
+  content: '';
+  width: 100%;
+  background: rgba(246, 49, 63, 0.55);
+  height: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: -1;
+}
+
+.boxes {
+  display: flex;
+}
+
+.boxes .item {
+  flex: 1;
+  margin: 0 10px;
+  box-sizing: border-box;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  top: 0;
+  transition: all .3s ease-in-out;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .boxes .item {
+    margin-bottom: 20px
+  }
+}
+
+.boxes .item:hover {
+  top: -5px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.boxes .item .body {
+  text-align: center;
+}
+
+.boxes .item .body .heading {
+  font-size: 14pt;
+  color: #404040;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 40px
+
+}
+
+.boxes .item:hover .body .heading {
+  color: #F7323F;
+}
+
+.boxes .item .body .lead {
+  font-weight: 300;
+  font-size: 10pt;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.boxes .item .body .heading::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  width: 60px;
+  height: 4px;
+  background: #F7323F;
+  margin: 0 auto
+}
+
+.sneakpeak {
+  padding: 80px 0 40px 0;
+  background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.05));
+  position: relative;
+  min-height: 581px
+}
+
+.sneakpeak .sneakpeak-body {
+  display: flex;
+  justify-content: center;
+  max-width: 60%;
+  height: 581px;
+  flex: 2
+}
+
+.sneakpeak .sneakpeak-body h1 {
+  font-size: 30pt;
+  font-weight: 300;
+  margin: 0;
+}
+
+.sneakpeak .sneakpeak-body .lead {
+  font-size: 16px;
+  color: rgba(34, 34, 34, 0.6);
+  line-height: 26px;
+}
+
+.sneakpeak .sneakpeak-body .short-box {
+  margin-top: 20px
+}
+
+.sneakpeak .sneakpeak-body .short-box .icon {
+  background: #F9E8E8;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px
+}
+
+.sneakpeak .sneakpeak-body .short-box h2 {
+  font-size: 24px;
+  font-weight: 300
+}
+
+.sneakpeak .sneakpeak-body .short-box .btn {
+  width: 180px;
+  height: 45px;
+  background: #F7323F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all .3s ease-in-out;
+}
+
+.sneakpeak .sneakpeak-body .short-box .btn:hover {
+  background: rgba(246, 49, 63, 0.9);
+}
+
+.sneakpeak .sneakpeak-cover {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 800px) {
+  .sneakpeak .sneakpeak-body {max-width: 100%; padding: 0 30px}
+  .sneakpeak .sneakpeak-cover {display: none}
+}
+
+@media (max-width: 1024px) {
+  .sneakpeak .sneakpeak-body {padding: 0 30px}
+  .sneakpeak .sneakpeak-cover {display: flex; justify-content: flex-end; align-items: center; height: 581px}
+  .sneakpeak .sneakpeak-cover img {width: 343px; height: 291px}
+}

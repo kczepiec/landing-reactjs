@@ -1,0 +1,96 @@
+header {
+    background: #1D2430 url('https://smart-digital.co.uk/wp-content/themes/smart/dist/video/smart_mp4.mp4');
+    width: 100%;
+    height: 610px;
+}
+
+.wrapper {
+    max-width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header-body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 2;
+    height: 100%;
+    color: #fff;
+    margin-top: 40px
+}
+
+.header-body h1 {
+    font-size: 35pt;
+    font-weight: 300;
+    margin: 0;
+    padding: 0
+}
+
+.header-body h1 > span {
+    position: relative;
+    z-index: 10;
+    font-weight: 600;
+}
+
+.header-body .lead {
+    font-size: 16pt;
+    margin: 15px 0;
+}
+
+.header-body .btn {
+    width: 180px;
+    height: 45px;
+    background: #F7323F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.header-body .btn:hover {
+    background: rgba(246, 49, 63, 0.7);
+}
+
+.header-body h1 > span::after {
+    content: '';
+    width: 100%;
+    background: rgba(246, 49, 63, 0.55);
+    height: 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+.magazine-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+.magazine-cover img {
+    position: relative;
+    bottom: -130px
+}
+
+@media (max-width: 1024px) {
+    .header-body {
+        flex: 1;
+        align-items: center;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .magazine-cover {
+        display: none
+    }
+}
