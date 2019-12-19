@@ -9,7 +9,7 @@ export class Form extends Component {
         this.state = {
             clients: [],
             countries: [],
-            formSucceed: true
+            formSucceed: false
         }
         // this.formSubmitHandler = this.formSubmitHandler.bind(this);
     }
@@ -25,7 +25,7 @@ export class Form extends Component {
 
     formSubmitHandler = (e) => {
         // e.preventDefault();
-        axios.post('http://127.0.0.1:8000/api/clients/', {
+        axios.post('http://api.krzysztofczepiec.pl/api/clients/', {
             firstName: e.firstName,
             lastName: e.lastName,
             email: e.email,
