@@ -72,7 +72,7 @@ function App() {
             <h2>Planning your event TV solution</h2>
             <p className="lead">The first step is to work out what you, as an organiser, want to achieve through your network. Whether you want to employ it to enhance delivery and awareness of all that the event has to offer, as a way of helping your exhibitors to be heard across the show or as a combination of both.</p>
             <p className="lead">Want more? <strong>Register and read.</strong></p>
-            <a href="#" className="btn">Register now</a>
+            <a href="#register" className="btn">Register now</a>
           </div>
         </div>
         <div className="sneakpeak-cover">

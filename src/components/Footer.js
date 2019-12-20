@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer>
             <div className="footer-top">
-                <img src={LogoDark}/>
+                <img src={LogoDark} alt="logo-dark"/>
             </div>
             <div className="footer-bottom">
                 <div className="copyright">
@@ -14,7 +14,7 @@ function Footer() {
                 </div>
                 <ul className="footer-nav">
                     <div className="nav-item">
-                        <a href="#" className="nav-link">Terms</a>
+                        {/* <a href="#" className="nav-link">Terms</a> */}
                     </div>
                 </ul>
             </div>
