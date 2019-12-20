@@ -26,10 +26,8 @@ export class Form extends Component {
     formSubmitHandler = (e) => {
         // e.preventDefault();
         axios.post('http://api.krzysztofczepiec.pl/api/clients', 
+        // axios.post('http://127.0.0.1:8000/api/clients', 
         {
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-            },
             firstName: e.firstName,
             lastName: e.lastName,
             email: e.email,
