@@ -35,7 +35,6 @@ export class Form extends Component {
             phone: e.phone,
             country: e.country,
         }).then(response => {
-            console.log(response.data)
             this.setState({ clients: response.data, loading: false, formSucceed: true });
         }).catch(function (error) {
             console.log(error);
